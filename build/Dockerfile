@@ -1,4 +1,4 @@
-FROM hinshun/go-cross:latest
+FROM docker.direct/go-cross:latest
 ONBUILD ARG PKG=.
 ONBUILD ARG BUILDMODE=default
 ONBUILD ARG LDFLAGS=
