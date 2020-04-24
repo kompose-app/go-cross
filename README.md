@@ -48,7 +48,7 @@ If you have private go modules, you can use that as long as the following are tr
 - The go module cache is in `/root/.cache/go-build` and `/root/go/pkg/mod`
 
 ```Dockerfile
-FROM golang:1.13-alpine AS mod
+FROM golang:1.14-alpine AS mod
 ENV GOPATH=/root/go
 ENV GOCACHE=/root/.cache/go-build
 RUN apk add --no-cache git openssh
